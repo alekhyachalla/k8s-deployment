@@ -3,7 +3,7 @@ Kubernetes Cluster Deployment using Kube-adm
 
 Pre-requisites:
 
-* For Master node atleast provide 2vcpus
+* For Master node use 2 VCPUs atleast
 * All systems should have internet access
 * Swap must be disabled
 * SELinux must be disabled
