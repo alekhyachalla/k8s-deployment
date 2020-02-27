@@ -18,15 +18,17 @@ On all nodes:
  
 ★ Set the static IP and Hostname. 
  
-# hostnamectl   set-hostname   <node-hostname> 
+ > hostnamectl   set-hostname   <node-hostname> 
  
 ★ Disable SELinux. 
  
-# setenforce 0 # sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux # reboot 
+> setenforce 0 
+> sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux 
+> reboot 
  
 ★ Set the local name resolution inside ‘hosts’ file ( if DNS is not available ) 
  
-#  vi  /etc/hosts 
+> vi  /etc/hosts 
  
 <ip-of-node> <hostname-of-node> ( repeat for all 3 nodes ) 
   
