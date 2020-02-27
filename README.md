@@ -30,7 +30,9 @@ On all nodes:
  
 > vi  /etc/hosts 
  
-<ip-of-node> <hostname-of-node> ( repeat for all 3 nodes ) 
+> ip-of-node  hostname-of-node
+
+( repeat for all 3 nodes ) 
   
   
 ★ Enable iptables filtering on bridge interface. 
