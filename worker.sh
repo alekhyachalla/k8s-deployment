@@ -40,6 +40,7 @@ echo
 firewall-cmd --permanent --add-port=10250/tcp --add-port=10255/tcp --add-port=30000-32767/tcp --add-port=6783/tcp
 firewall-cmd  --reload
 
+echo 1 > /proc/sys/net/bridge/bridge-nf-call-iptables
 echo "*********************************************************************************"
 echo "Worker node got initialize successfully"
 echo
